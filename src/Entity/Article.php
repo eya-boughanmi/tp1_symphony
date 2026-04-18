@@ -10,9 +10,9 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
 class Article
 {
-    #[ORM\Id]
+    #[ORM\Id] #clé primaire
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column] #c'est un champ
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]

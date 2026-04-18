@@ -6,4 +6,12 @@
     <h1>👋 Bienvenue sur notre application Symfony !</h1>
     <p>Ceci est votre première application construite avec le framework <strong>Symfony 7.4</strong>.</p>
     <p>Date actuelle : {{ "now"|date("d/m/Y H:i") }}</p>
+    <p>Nombre de visites : {{ visites }}</p>
+
+    <h3>Derniers articles :</h3>
+
+    {% for article in articles %}
+        <p>{{ article.titre }}</p>
+    {% endfor %}
+
 {% endblock %}
